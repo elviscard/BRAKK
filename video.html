@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="css/tiny-slider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+	<title>Brakk</title>
+</head>
+
+<body>
+	<!-- Start Header/Navigation -->
+	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="css\imagens\LogoBrakk.png" alt="Logo da Brakk">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+				aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarsFurni">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li><a class="nav-link" href="video.html">Video</a></li>
+					<li><a class="nav-link" href="contact.html">Contato</a></li>
+				</ul>
+				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+					<li><a class="nav-link" href="#"><img src="css\imagens\user.svg"></a></li>
+					<li><a class="nav-link" href="cart.html"><img src="css\imagens\cart.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Header/Navigation -->
+
+	<!-- Video  -->
+	<section class="container video-section">
+		<div class="row">
+			<div class="col-lg-6">
+				<h2 class="text-center" style="font-size: 28px; line-height: 1.5; margin-top: 150px;">Aperte o play e
+					assista o vídeo!</h2>
+				<p class="text-center" style="font-size: 18px; line-height: 1.5; margin-top: 50px;">Este vídeo apresenta
+					o Simulador de Perdas Esperadas, </br>uma ferramenta que ajuda as cooperativas a gerenciar o risco
+					de crédito.</p>
+				<img src="css/imagens/instru.png" class="img-fluid" alt="Instrução"
+					style="padding-left: 10%; margin-top: 20px;">
+			</div>
+
+			<div class="col-lg-6">
+				<video width="640" height="480" controls>
+					<source src="video\apresentacaosimulador.mp4" type="video/mp4">
+					Seu navegador não suporta a reprodução de vídeos.
+				</video>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Video -->
+
+	<!-- Start Footer Section -->
+	<footer class="footer-section">
+		<div class="container relative">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="subscription-form">
+						<h3 class="d-flex align-items-center"><span class="me-1"><img
+									src="css\imagens\envelope-outline.svg" alt="Image"
+									class="img-fluid"></span><span>Deixe seu nome e e-mail, entraremos em
+								contato.</span></h3>
+
+						<form action="#" class="row g-3">
+							<div class="col-auto">
+								<input type="text" class="form-control" placeholder="Seu nome">
+							</div>
+							<div class="col-auto">
+								<input type="email" class="form-control" placeholder="Seu e-mail">
+							</div>
+							<div class="col-auto">
+								<button class="btn btn-primary">
+									<span class="fa fa-paper-plane"></span>
+								</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="row g-5 mb-5">
+				<div class="col-lg-12">
+					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo"><img
+								src="css\imagens\LogoBrakk.png" style="width: 15%;" alt="Minha Empresa"></a></div>
+					<p class="mb-4">A BRAKK foi fundada com o propósito claro de fornecer soluções tecnológicas
+						inovadoras para o mercado cooperativista.
+						Nosso principal objetivo é facilitar a transição e conformidade das cooperativas com os
+						requisitos da Resolução CMN nº 4.966/21.
+						Para alcançar essa meta, desenvolvemos um software simulador intuitivo e altamente eficaz.
+						Através dessa plataforma, buscamos não
+						apenas simplificar os processos, mas também capacitar as cooperativas a enfrentar os desafios
+						regulatórios de forma mais eficiente
+						e segura. Na BRAKK, estamos comprometidos em apoiar o crescimento e sucesso das cooperativas,
+						oferecendo soluções tecnológicas
+						sob medida para suas necessidades específicas.</p>
+					<ul class="list-unstyled custom-social">
+						<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-x"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="border-top copyright">
+				<div class="row pt-4">
+					<div class="col-lg-6">
+						<p class="mb-2 text-center text-lg-start">Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+							Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a
+								hreff="https://themewagon.com">ThemeWagon</a>
+						</p>
+					</div>
+					<div class="col-lg-6 text-center text-lg-end">
+						<ul class="list-unstyled d-inline-flex ms-auto">
+							<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
